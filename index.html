@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="style1.css">
+    <title>AUTO PARTS | CLONE BY AWAIS</title>
+</head>
+<body>
+    <nav style="background-color: #1D1D1F;">
+        <ul>
+            <li class="h">
+                <a href="ind.html">About us</a>
+            </li>
+            <li class="h">
+                <a href="#">Terms of Services</a>
+            </li>
+            <li class="h">
+                <a href="#">FAQ</a>
+            </li>
+            <li class="h">
+                <a href="#">Privacy Policy</a>
+            </li>
+                
+                <p>Now offering free shipping on all orders over $50!</p>
+            
+            <li class="h">
+                <a href="#">
+                <select ><option value="1">English</option></select>
+            </a>
+            </li >
+            <li class="h">
+                <a href="#">
+                <select ><option value="1">United States(USD $)</option></select>
+            </a>
+            </li>
+        </ul>    
+    </nav>
+    <header style="background-color: #FFFFFF">
+        <section class="nav-h" >
+          <ul>
+            <li><a href="index.html"><img src="images/logo.PNG" alt="logo"></a></li>
+            <li class="h" ><a class="h" href="index.html">Catalog</a></li>
+            <li class="h" ><a class="h" href="#">About us</a></li>
+            <li  class="h"><a class="h"  href="#">Blog</a></li>
+            <li  class="h"><a class="h" href="#">Help</a></li>
+            <li  class="h"><a class="h" href="#"> <button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 150px;" type="button" class="btn btn-warning">All Categories</button></a></li>
+            <li class="h" ><a class="h" href="#"><input type="text" placeholder="Search.."><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li  class="h"><a class="h" href="#"><i class="fa-solid fa-user"></i></a></li>
+            <li class="h" ><a class="h" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="m-btn" onclick=showSidebar()><a href="#">Menu<svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+		  <li><a href="#">Catalog</a></li>
+		  <li><a href="#">Blog</a></li>
+		  <li><a href="#">About us</a></li>
+		  <li><a href="#">Help</a></li>
+        </ul>
+        </section>
+    </header>
+    <div class="carousel" id="carouselDemo" data-bs-wrap="true"  data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner-image.jpg" alt="banner" class="w-100">
+                    <div class="carousel-caption">
+                        <form action="#" class="frm">
+                        <h2>Search by vehicle</h2>
+                        <select name="" id="">
+                            <option value="1">Air Intake</option>
+                            <option value="2">Brake System</option>
+                            <option value="3">Car Audio System</option>
+                        </select>
+                        <br>
+                        <select name="" id="">
+                            <option value="1">Aluminium</option>
+                            <option value="2">Metal</option>
+                            <option value="3">Stainless Steel</option>
+                        </select>
+                        <br>
+                        <select name="" id="">
+                            <option value="1">Grapho</option>
+                            <option value="2">Prelude</option>
+                            <option value="3">Iconic</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 150px;" type="button" class="btn btn-warning">Search</button>
+
+                        </form>
+                        <h4>Turn your automotive dreams into reality.</h4>
+                        <button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button>
+                        <button type="button" class="btn btn-light">Explore Collections</button>
+                    </div>
+                    
+            </div>
+            <div class="carousel-item " >
+                <video controls autoplay class="w-100" >
+                    <source src="videos/car.mp4"  type="video/mp4">
+                  </video>
+                <div class="carousel-caption">
+                    <h4>Turn your automotive dreams into reality.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner-image.jpg" alt="banner" class="w-100">
+                <div class="carousel-caption">
+                    <h4>Turn your automotive dreams into reality.</h4>
+                    <button type="button" class="btn btn-warning">Shop Now</button>
+                    <button type="button" class="btn btn-light">Explore Collections</button>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" 
+            type="button"
+            data-bs-target="#carouselDemo" 
+            data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+        
+            <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselDemo"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <center>
+    <h2>Our Top Collections!</h2>
+</center>
+</div>
+<br>
+<div>
+    <center>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Automobile parts</button>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Performance parts</button>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Body parts</button>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Electronics</button>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Wheels and tires</button>
+</center>
+</div>
+<hr>
+<br>
+<div class="auto" style="background-color: #F4F2EC;">
+    <center>
+    <figure class="figure">
+        <img src="images/pexels-lynxexotics-4022545.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption"><h4>Brake System</h4></figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/pexels-bob-ronald-334686276-14572398.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption"><h4>Engine Parts</h4</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="images/pexels-19x14-8478237.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption"><h4>Suspension System</h4></figcaption>
+      </figure>
+</center>
+</div>
+
+
+<div class="auto" style="background-color: #F4F2EC;">
+    <center>
+        <figure class="figure">
+            <img src="images/pexels-olly-3822938.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h4>Cooling System</h4></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/pexels-jakewymoore-16124178.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h4>Exhaust System</h4></figcaption>
+          </figure>
+    </center>
+</div>
+<br>
+
+<div>
+    <center>
+    <h3 style="font-weight: bold; font-family: sans-serif;">
+        Top hot deals of the week
+    </h3>
+    <p style="font-weight: lighter;">Explore our hottest of deals below</p>
+</center>
+</div>
+
+<div style="background-color: #F4F2EC; padding: 10px;">
+    <center>
+        <figure class="figure">
+            <img src="images/airfilter1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Air Filters</h5><br><p>$200</p></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/AlloyWheels1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Alloy Wheels</h5><br><p>From $25</p></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/PerformanceTires1a-1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Tire</h5><br><p>$200</p></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/PerformanceMufflers.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Silencers</h5><br><p>$200</p></figcaption>
+          </figure>
+         
+</center>
+</div>
+
+<div style="background-color: #F4F2EC;">
+    <center>
+        <figure class="figure">
+        <img src="images/Starters1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+        <figcaption class="figure-caption"><h5>Alternators</h5><br><p>$800</p></figcaption>
+      </figure>
+      <figure class="figure">
+      <img src="images/balljoints1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption"><h5>Ball Joints</h5><br><p>$80</p></figcaption>
+    </figure>
+    <figure class="figure">
+      <img src="images/batteries1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption"><h5>Battery</h5><br><p>$1200</p></figcaption>
+    </figure>
+    <figure class="figure">
+    <img src="images/BrakeRotors1a.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    <figcaption class="figure-caption"><h5>Brake Rotors</h5><br><p>$200</p></figcaption>
+  </figure>
+</center>
+</div>
+<br>
+<div>
+    <center>
+    <h3 style="font-weight: bold; font-family: sans-serif;">
+        The perfect solutions for cars!
+    </h3>
+    <p style="font-weight: lighter;">Explore and find all the parts for your car from front to rear bumpers.</p>
+</center>
+</div>
+<div class="h1">
+    <center>
+        <img src="images/car.PNG" alt="car">
+    </center>
+</div>
+<br>
+<br>
+<div class="h1" >
+    <center>
+   <img src="images/result.gif" alt="rs">
+        </center>
+</div>
+<div class="h22">
+    
+    <h1 style="color: #FB542F; text-align: center;">
+       
+        Make Your car last Longer!
+    </h1>
+
+</div>
+<div style="background-color: #F4F2EC;">
+    <center>
+        <figure class="figure">
+            <img src="images/service-1.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Deals of the year</h5><br><p>Explore hottest deals all year round</p><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="images/service-2_opt.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Pro services</h5><br><p>Get our professional services and recommendations</p><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+          </figure>
+          <br>
+          <figure class="figure">
+            <img src="images/service-3.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Engine Tuning</h5><br><p>Get our expert view to update your engine's life</p><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+          </figure>
+          <figure class="figure">
+            <img style="width: 630px; height: 610px;" src="images/pexels-cottonbro-4489746-2.jpg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption"><h5>Maintenance</h5><br><p>Receive regular maintenance tips from our experts</p><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+          </figure>
+    </center>
+</div>
+<br>
+<br>
+<div class="container" id="hide">
+  
+    <div class="image">
+      <img src="images/BrakeCalipers.png">
+    </div>
+    <div class="text">
+      <h6 style="background-color: seagreen; color: white; width: 150px; text-align: center;">Featured Content</h6>
+      <h1>Brake Clippers</h1>
+      <p style="font-weight: lighter;">$200</p>
+      <p style="font-weight: lighter;">Tax Included.</p>
+      <p>Our curated collections are meant to inspire your creative sideand provide you with product options.</p>
+      <h5>Material</h5>
+      <select name="" id="">
+        <option value="1">Cast iron</option>
+        <option value="2">Aluminium (unavailable)</option>
+      </select>
+      <h5>Quantity</h5>
+      <input type=number placeholder="1" style="text-align: center;">
+        <button style="color: #fff; background-color: black; width: 200px;" type="button" class="btn btn-outline-secondary">Buy It Now</button>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+  <di>
+    <br>
+    <div class="hid">
+    <div class="carousel slide" id="carouselDemo"data-bs-wrap="true" data-bs-ride="carousel" >
+    <div class="carousel-inner" >
+        <div class="carousel-item active">
+            <img style="width: 605px; height: 605px;"  src="images/image-1.jpg" class="w-100">
+            <div class="carousel-caption" style="float: left; background-color: #083C7E; border-radius: 10px; width: 700px; height: 600px;">
+                <h1 style="color: white;">Experiece Superior Performance And visibility</h1>
+                <p style="color: white;">
+                    Experience superior performance and visibility with our headlights. Get ready for all late-night adventures!
+                </p>
+                <center>
+                <div style="background-color: #fff; border-radius: 30px; width: 300px; height: 150px;">
+                   
+                    <h5 style="color: black;">LED Headlights</h5>
+                    <p style="font-weight: lighter; color: black;">$300.00</p>
+                    <button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button>
+                
+                </div>
+            </center>
+            </div>
+        </div>
+        <div class="carousel-item "  >
+            <img style="width: 605px; height: 605px;" src="images/image-2_c5334b27-ea41-495f-892e-f1336761e21d.jpg " class="w-100" >
+            <div class="carousel-caption" style="float: left; background-color: #083C7E; border-radius: 10px;width: 700px; height: 600px;" >
+                <h1 style="color: white;">Experiece Superior Performance And visibility</h1>
+                <p style="color: white; ">
+                    Experience superior performance and visibility with our headlights. Get ready for all late-night adventures!
+                </p>
+                <center>
+                <div style="background-color: #fff; border-radius: 30px; width: 300px; height: 150px;">
+                 
+                    ]<h5 style="color: black;">SuperCharge Kit</h5>
+                    <p style="font-weight: lighter; color: black;">$2000.00</p>
+                    <button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button>
+               
+                </div>
+            </center>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" 
+    type="button" data-bs-target="#carouselDemo"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next"
+    type="button"  data-bs-target="#carouselDemo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+  </div>
+</div>
+<br>
+<div style="background-color: #F4F2EC;">
+    <center>
+    <h1>Best sellers</h1>
+<img src="images/Image_2.jpg" alt="i" style="border-radius: 10px;">
+<img src="images/Image_3.jpg" alt="i" style="border-radius: 10px;">
+<img src="images/Image_4.jpg" alt="i" style="border-radius: 10px;">
+</center>
+</div>
+<div>
+    <center>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Top New</button>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">Featured</button>
+    <button style="color: black;" type="button" class="btn btn-outline-secondary">New Arrivals</button>
+</center>
+</div>
+<hr>
+<div style="background-color: #F4F2EC;">
+<center>
+    <figure class="figure">
+        <img  src="images/Starters1.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Starters</h5><br><p>$600.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+      <figure class="figure">
+        <img  src="images/sparkplug1.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Spark Plugs</h5><br><p>$10.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+      <figure class="figure">
+        <img  src="images/Shockabsorbers.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Shockabsorbers</h5><br><p>$120.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+      <figure class="figure">
+        <img  src="images/Radiators1.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Radiators</h5><br><p>$2000.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+</center>
+</div>
+<div style="background-color: #F4F2EC;">
+    <center>
+        <figure class="figure">
+        <img  src="images/PerformanceMufflers.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>PerformanceMufflers</h5><br><p>$150.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+      <figure class="figure">
+        <img  src="images/PerformanceChips-1.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Control Module Chips</h5><br><p>$500.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+      <figure class="figure">
+        <img  src="images/PerformanceChips-2.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Power Programmer Chips</h5><br><p>$500.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+      <figure class="figure">
+        <img  src="images/NitrousKits.png" class="figure-img img-fluid rounded" >
+        <figcaption class="figure-caption"><h5>Nitrous System</h5><br><p>$1200.00</p> <input type="checkbox">Add to Compare &nbsp; <br><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button></figcaption>
+      </figure>
+    </center>
+</div>
+<br>
+<br>
+<div style="background-color: #F4F2EC; z-index: -1;" >
+    <center>
+    <h2>Explore Ways To Save</h2>
+    <br>
+    <br>
+    <img src="images/car.webp" alt="i" style="width: 573px; height: 668px;">
+    <img src="images/Box-2.jpg" alt="bx" style="margin-top: -18%;">
+    <img class="pad" src="images/Group_1000003536.jpg" alt="gr" style="padding-left: 33.4%; margin-top: -20%;  ">
+</center>
+</div>
+<div >
+    <center>
+        <br>
+        <h2>Shop By Brands</h2>
+        <br>
+        <img src="images/Logo_Grapho_Logo_type_Logo_text_Color_Dark.png" alt="Brands Logo" style="padding: auto;">
+        <img src="images/Logo_Iconic_Logo_type_Logo_text_Color_Dark.png" alt="Brands Logo" style="padding: auto;">
+        <img src="images/Logo_Logique_Logo_type_Logo_text_Color_Dark.png" alt="Brands Logo" style="padding: auto;">
+        <img src="images/Logo_Prelude_Logo_type_Logo_text_Color_Dark.png" alt="Brands Logo" style="padding: auto;">
+        <img src="images/Logo_Signum_Logo_type_Logo_text_Color_Dark.png" alt="Brands Logo" style="padding: auto;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </center>
+</div>
+
+<div style="background-color: #F4F2EC;" >
+    <center>
+        <h2 style="font-family: Arial, Helvetica, sans-serif;">Vehicle based on its design, shape and space</h2>
+        <p>Compare before and after of your vehicle after upgrading it using our products</p>
+        <div class="container">
+            <div class="image-container">
+              <img
+                class="image-before slider-image"
+               src="images/s-01.jpg"
+                alt="color photo"
+              />
+              <img
+                class="image-after slider-image"
+                src="images/s-02.jpg"
+                alt="black and white"
+              />
+            </div>
+            <!-- step="10" -->
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Percentage of before photo shown"
+              class="slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="128"
+                  y1="40"
+                  x2="128"
+                  y2="216"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <line
+                  x1="96"
+                  y1="128"
+                  x2="16"
+                  y2="128"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="48 160 16 128 48 96"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+                <line
+                  x1="160"
+                  y1="128"
+                  x2="240"
+                  y2="128"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <polyline
+                  points="208 96 240 128 208 160"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></polyline>
+              </svg>
+            </div>
+          </div>
+    </center>
+</div>
+<br><br>
+<div style="background-color: #F4F2EC;" class="HIF">
+    <center>
+        <br><br>
+        <h1>
+            Product comparison
+        </h1>
+        <p>Compare multiple products at once and get the best deal for yourself</p>
+        <br><br>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><figure class="figure">
+                <img  src="images/Capture.PNG" class="figure-img img-fluid rounded" style="width: 148px; height: 148px;" >
+                <figcaption class="figure-caption">&nbsp;</figcaption>
+              </figure></th>
+            <th scope="col"><figure class="figure">
+                <img  src="images/download.jpeg" class="figure-img img-fluid rounded" style="width: 148px; height: 148px;" >
+                <figcaption class="figure-caption"><h3>Brake Disc</h3><p>$100.00</p></figcaption>
+              </figure></th>
+            <th scope="col"><figure class="figure">
+                <img  src="images/download (1).jpeg" class="figure-img img-fluid rounded" style="width: 148px; height: 148px;" >
+                <figcaption class="figure-caption"><h3>Brake Kit</h3><p>$35.00</p></figcaption>
+              </figure></th>
+            <th scope="col"><figure class="figure">
+                <img  src="images/download (2).jpeg" class="figure-img img-fluid rounded" style="width: 148px; height: 148px;" >
+                <figcaption class="figure-caption"><h3>Brake Rotors</h3><p>$60.00</p></figcaption>
+              </figure></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Application</th>
+            <td>Sport performance <p>(Summer/ dry and wet)</p></td>
+            <td>Luxury performance <p>(All-seasoned)</p></td>
+            <td>Luxury performance <p>(All-seasoned)</p></td>
+          </tr>
+          <tr>
+            <th scope="row">Mileage warranty</th>
+            <td>30,000</td>
+            <td>50,000</td>
+            <td>50,000</td>
+          </tr>
+          <tr>
+            <th scope="row">Tread pattern</th>
+            <td >Asymmetric</td>
+            <td>Symmetric</td>
+            <td>Symmetric</td>
+          </tr>
+          <tr>
+            <th scope="row">Noise level</th>
+            <td >4</td>
+            <td>3</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+            <td><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 250px;" type="button" class="btn btn-warning">View Product</button></td>
+            <td><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 250px;" type="button" class="btn btn-warning">View Product</button></td>
+            <td><button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 250px;" type="button" class="btn btn-warning">View Product</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+</div>
+<br>
+<div style="background-color: #F4F2EC;">
+    <br><br><br>
+    <div class="carousel" id="carouselDemo" data-bs-wrap="true"  data-bs-ride="carousel"></div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/Image_8.webp" alt="banner" style="width: 1920px; height: 350px;">
+                <div class="carousel-caption">
+                        <h1>Save up to 50%</h1>
+                        <p>Explore our items on sale and get upto 50% off on!</p>
+                        <button style="background-color: #FB542F; border-color: #FB542F; color: #FFFFFF; width: 100px;" type="button" class="btn btn-warning">Shop Now</button>    
+            </div>      
+        </div>
+      
+    </div>
+</div>
+
+
+<div style="background-color: #F4F2EC;">
+    <center> <br><br>
+<div class="testimonials-wrapper isolate">
+
+    <div class="page-width">
+      <div class="testimonials__title-wrapper">
+        <h2 class="testimonial__title section-heading inline-richtext h2 scroll-trigger animate--slide-in align-center">Our clients and their experience</h2>
+      </div>
+    </div>
+
+    <div class="testimonials__list__wrap scroll-trigger animate--slide-in">
+      <ul class="testimonials__list">
+        
+
+          <li class="testimonials__item color-scheme-1">
+            
+
+            <div class="testimonials__item-rating">
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+            </div>
+
+            <div class="testimonials__item-text inline-richtext">
+              Always wanted to do some minor upgrades on my car but never knew where to start.&nbsp;The tutorials and guides on AutoParts were super helpful!&nbsp;They gave me the confidence to tackle a new air intake system myself.&nbsp;Thanks for empowering newbies like me!
+            </div>
+
+            <div class="testimonials__item-author">
+
+              
+
+
+                
+                <img src="images/shutterstock_289427012_1.jpg" alt="testimonial author avatar" width="80" height="80" loading="lazy" sizes="80px" class="testimonials__item-author-avatar">
+              
+
+              <div class="testimonials__item-author-info">
+                <div class="testimonials__item-author-fullname inline-richtext">
+                  David G.
+                </div>
+
+                <div class="testimonials__item-author-jobtitle inline-richtext">
+                  Director at Igloo
+                </div>
+              </div>
+            </div>
+          </li>
+
+        
+
+          <li class="testimonials__item color-scheme-1">
+            
+
+            <div class="testimonials__item-rating">
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.58261 0.0150871C9.51588 0.0594917 8.01079 3.16041 7.08401 5.15861C6.869 5.62486 6.74295 5.81728 6.63174 5.83948C6.54277 5.85429 6.2462 5.90609 5.95704 5.9505C4.48161 6.16512 0.403784 6.84599 0.351884 6.88299C0.314813 6.90519 0.285156 6.9422 0.285156 6.9718C0.285156 7.01621 3.42879 10.0431 4.61507 11.1384L4.97095 11.4715L4.51868 14.3134C4.27401 15.8823 4.05159 17.3551 4.02193 17.5993C3.97003 18.0285 3.97003 18.0285 4.14797 17.9767C4.24436 17.9471 5.04509 17.5327 5.91997 17.0516C6.79485 16.578 8.03303 15.9119 8.66324 15.5715L9.81245 14.9498L12.7114 16.4226C14.3055 17.2293 15.64 17.8657 15.6845 17.8435C15.729 17.8139 15.7142 17.5475 15.6252 17.0738C15.5511 16.6742 15.3361 15.4827 15.1507 14.4244C14.9653 13.3661 14.7652 12.2485 14.6984 11.9451L14.5946 11.3975L16.9079 9.08102C18.3907 7.59346 19.1989 6.74238 19.1544 6.69797C19.0877 6.63137 15.9737 6.17252 13.7791 5.90609C13.2304 5.83948 12.7411 5.75068 12.6966 5.69887C12.6521 5.65447 11.9922 4.38153 11.2286 2.87918C10.4649 1.36943 9.80503 0.103896 9.75313 0.0520905C9.70123 0.000285143 9.62709 -0.0145159 9.58261 0.0150871Z" fill="#D9D9D9"></path>
+                    </svg>
+                  </span>
+                
+              
+            </div>
+
+            <div class="testimonials__item-text inline-richtext">
+              Needed some replacement brake pads for my daily driver.&nbsp;The website was easy to navigate,&nbsp;and I found exactly what I needed at a competitive price.&nbsp;Delivery was quick,&nbsp;and the parts fit perfectly.&nbsp;Would recommend for basic maintenance needs.
+            </div>
+
+            <div class="testimonials__item-author">
+
+              
+
+
+                
+                <img src="images/shutterstock_289427012_1_1.jpg" alt="testimonial author avatar" width="80" height="80" loading="lazy" sizes="80px" class="testimonials__item-author-avatar">
+              
+
+              <div class="testimonials__item-author-info">
+                <div class="testimonials__item-author-fullname inline-richtext">
+                  Emma Johnson
+                </div>
+
+                <div class="testimonials__item-author-jobtitle inline-richtext">
+                  Chief Customer Officer at Happy Money
+                </div>
+              </div>
+            </div>
+          </li>
+
+        
+
+          <li class="testimonials__item color-scheme-1">
+            
+
+            <div class="testimonials__item-rating">
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+                
+                  <span class="testimonials__item-rating-star filled">
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.0123 0.0150871C9.94557 0.0594917 8.44048 3.16041 7.5137 5.15861C7.29868 5.62486 7.17264 5.81728 7.06143 5.83948C6.97246 5.85429 6.67589 5.90609 6.38673 5.9505C4.9113 6.16512 0.833471 6.84599 0.781572 6.88299C0.744501 6.90519 0.714844 6.9422 0.714844 6.9718C0.714844 7.01621 3.85848 10.0431 5.04476 11.1384L5.40064 11.4715L4.94837 14.3134C4.7037 15.8823 4.48127 17.3551 4.45162 17.5993C4.39972 18.0285 4.39972 18.0285 4.57766 17.9767C4.67404 17.9471 5.47478 17.5327 6.34966 17.0516C7.22454 16.578 8.46272 15.9119 9.09293 15.5715L10.2421 14.9498L13.1411 16.4226C14.7352 17.2293 16.0697 17.8657 16.1142 17.8435C16.1587 17.8139 16.1439 17.5475 16.0549 17.0738C15.9808 16.6742 15.7657 15.4827 15.5804 14.4244C15.395 13.3661 15.1948 12.2485 15.1281 11.9451L15.0243 11.3975L17.3376 9.08102C18.8204 7.59346 19.6286 6.74238 19.5841 6.69797C19.5173 6.63137 16.4034 6.17252 14.2087 5.90609C13.6601 5.83948 13.1708 5.75068 13.1263 5.69887C13.0818 5.65447 12.4219 4.38153 11.6583 2.87918C10.8946 1.36943 10.2347 0.103896 10.1828 0.0520905C10.1309 0.000285143 10.0568 -0.0145159 10.0123 0.0150871Z" fill="#FCC802"></path>
+                    </svg>
+
+                  </span>
+                
+              
+            </div>
+
+            <div class="testimonials__item-text inline-richtext">
+              Needed some new spark plugs in a pinch.&nbsp;The website is super user-friendly,&nbsp;and checkout was a breeze.&nbsp;Parts arrived quickly and exactly as described.&nbsp;Will definitely use them again for future maintenance needs.
+            </div>
+
+            <div class="testimonials__item-author">
+
+              
+
+
+                
+                <img src="images/shutterstock_289427012_2.jpg" alt="testimonial author avatar"  height="80" loading="lazy" sizes="80px" class="testimonials__item-author-avatar">
+              
+
+              <div class="testimonials__item-author-info">
+                <div class="testimonials__item-author-fullname inline-richtext">
+                  Robert Wattson
+                </div>
+
+                <div class="testimonials__item-author-jobtitle inline-richtext">
+                  Finance Manager
+                </div>
+              </div>
+            </div>
+          </li>
+            </div>
+    </div>
+  </div>
+</center>
+</div>
+<br>
+<div>
+  <center>
+<h1 style="float: left; ">
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; From the Autoparts blogs
+</h1>
+<button style="background-color: #FB542F;  border-color: #FB542F; color: #FFFFFF; width: 150px;" type="button" class="btn btn-warning">See All Blogs</button>
+</center>
+</div>
+<br>
+<div>
+  <center>
+    <img src="images/1.PNG" alt="1">
+<img src="images/2.PNG" alt="2">
+<img src="images/3.PNG" alt="3">
+  </center>
+</div>
+<br>
+<div class="container">
+  <img src="images/logo.PNG" alt="logo">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Collections</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Engine Parts</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Engine Tuning</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Brake System</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Best sellers</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Top new</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Featured</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">New arrivals</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>About us</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Our story</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms of service</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Customer service</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shipping information</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gifts page</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Legal Support</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Support</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms of Service</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Delivery Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <p>Join our newsletter for new offers.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
+            <button style="background-color: #FB542F;  border-color: #FB542F; color: #FFFFFF; width: 150px;" type="button" class="btn btn-warning">-></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024  All rights reserved By Awais.</p>
+    </div>
+    
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
